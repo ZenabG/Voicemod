@@ -15,8 +15,7 @@
           <include name="before"/>
           <include name="verifyVoicemodSignInUsingDiscord"/>
           <include name="setDownloadPrefInFirefox"/>
-          <include name="downloadVoicemodUsingGoogleSignIn"/>
-          <include name="closeBrowser"/>
+          <include name="verifyVoicemodSignInUsingTwitch"/>
         </methods>
       </class> <!-- tests.TestsAcceptanceWebsite -->
     </classes>
