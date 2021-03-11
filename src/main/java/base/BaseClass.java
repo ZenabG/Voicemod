@@ -145,7 +145,7 @@ public class BaseClass {
 	 * @param result
 	 * @throws IOException
 	 * @AfterMethod - runs once after every test method
-	 * This method gets the failure message in extent report for failed and skipped tests
+	 * This method gets the failure message in extent report for failed and skipped tests. It also closes the browser and kills the driver instance.
 	 */
 	@AfterMethod
 	public void getTestResultInExtentReport(ITestResult result) throws IOException {
@@ -159,15 +159,6 @@ public class BaseClass {
 			test.skip(result.getThrowable().getMessage());
 
 		extent.flush();
-	}
-
-	/**
-	 * @AfterMethod - runs once after every test method 
-	 * This java method kills the driver instance and hence closes the browser window.
-	 */
-	@AfterMethod
-	public void closeBrowser() {
-		driver.manage().deleteAllCookies();
 		driver.close();
 	}
 
