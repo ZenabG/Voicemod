@@ -14,6 +14,8 @@ consists of 3 packages - tests, voicemodDownloads and test-XMLs. **Tests** packa
 
 **test-extent** - this folder stores extent report for each run and screenshots for failed test step.
 
+**sonar_analysis** - this folder consists of sonar analysis screenshots
+
 **Note:**
 
 - If the project is imported in eclipse, add the TestNG libraries from Help > Intall New Software > update site URL in "Work with:" field >    https://dl.bintray.com/testng-team/testng-eclipse-release/. The testNG dependency is added in pom.xml but still this step is needed in eclipse to install TestNG libraries.
