@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="VoicemodWebsiteTests" verbose="2" configfailurepolicy="continue">
+ 	<test name="Voicemod website tests" preserve-order="true">
+       <parameter name="url" value="https://www.voicemod.net/" />
+      <classes>
+          <class name="tests.TestsAcceptanceWebsite"/> 
+      </classes>      
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->
